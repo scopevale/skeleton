@@ -44,7 +44,7 @@ config.logfilename    = process.env.LOGFILE ||'skeleton.log';
  */
 
 config.mongodb        = {};
-config.mongodb.url    = process.env.MONGODB_URL || 'localhost';
+config.mongodb.url    = process.env.MONGOLAB_URI || process.env.MONGODB_URL || 'localhost';
 
 /**
  * Session Configuration
